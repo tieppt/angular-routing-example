@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NotFoundService } from '../services/not-found.service';
 
 @Component({
   selector: 'app-not-found',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor(private nfService: NotFoundService) { }
 
   ngOnInit() {
+    this.nfService.emit(true);
   }
 
+  ngOnDestroy() {
+    this.nfService.emit(false);
+  }
 }

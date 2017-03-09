@@ -10,6 +10,7 @@ import { ProductRoutingModule } from './product/product-routing.module';
 import { ProductModule } from './product/product.module';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
+import { NotFoundService } from './services/not-found.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { DashBoardComponent } from './dash-board/dash-board.component';
     // the root routing module must on the end of this array
     AppRoutingModule
   ],
-  providers: [],
+  providers: [NotFoundService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
