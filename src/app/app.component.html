@@ -1,4 +1,11 @@
 <h1>
   {{title}}
 </h1>
+<div>
+  <a [routerLink]="['/']">Home</a>
+  <a [routerLink]="['exam']">Exam</a>
+  <a [routerLink]="['exam', 'detail']">Exam detail</a>
+  <a [routerLink]="['product']">Product</a>
+  <a [routerLink]="['product', 100]">Product id = 100</a>
+</div>
 <router-outlet></router-outlet>
