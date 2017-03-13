@@ -1,3 +1,13 @@
 <p>
   exam-detail works!
 </p>
+
+<div>
+  <input type="text" [(ngModel)]="examId">
+  <input type="text" [(ngModel)]="step">
+  <button (click)="doIt()">Do it</button>
+</div>
+<p *ngIf="data">
+  <span>Exam Id: {{ data.examId }}</span>
+  <span>Exam step: {{ data.step }}</span>
+</p>

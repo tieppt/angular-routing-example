@@ -2,7 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
+## List available routes:
+
+* `/`
+
+* `/exam`
+
+* `/exam?searchKey=xxx&page=yyy`
+
+* `/exam/detail`
+
+* `/exam/detail;id=xxx;step=yyy`
+
+* `/product`
+
+* `/product/:id`
+
+* `/not-found` - any route does not match above routes.
+
 ## Development server
+
+Run `npm i` or `yarn install` to install dependecies first.
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
